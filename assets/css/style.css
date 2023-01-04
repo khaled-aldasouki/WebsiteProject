@@ -1,5 +1,31 @@
-#title{
+*{
     font-family: "Bahnschrift";
+}
+
+body{
+    margin:0;
+}
+
+div{
+    background-color: #eaeaeada;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+a{
+    background-color: #01bdc6;
+    padding: 1.5vh 2vw;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0.4vw;
+    border-radius: 15px;   
+    font-size: 1.2em;  
+}
+
+#title{
     display: inline;
 }
 
@@ -9,9 +35,12 @@ header{
     justify-content: space-between;
     align-content: center;
     position: sticky;
+    top: 0;
+    z-index: 10;
 }
 header h1{
-    font-size: 2rem;
+    margin:3vh 3vw;
+    font-size: 2.5rem;
 }
 
 nav{
@@ -20,15 +49,58 @@ nav{
 
 }
 nav a{
-    background-color: #01bdc6;
-    font-family: "Bahnschrift";
     margin-right: 3vw;
     margin-left: 3vw;
-    padding: 1.5vh 2vw;
+}
+
+h3{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#about-brief{
+    margin: 0;
+    padding: 3vh 3vw;
+    background-color: #EAEAEA;
+}
+#about-brief p{
+    width: 65vw;
+    height: 20vh;
+}
+
+#game-brief{
+    margin: 0;
+    padding: 3vh 3vw;
+    background-color: #b2b2b2ce;
+}
+#game-brief p{
+    width: 50vw;
+    height: 25vh;
+}
+
+#more{
+    padding: 1vh 1.5vw;
+}
+
+div h2{
+    font-size: 4rem;
+    padding: 10vh 0 5vh 0;
+    margin:auto;
     text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin: 0.4vw;
-    border-radius: 15px;   
-    font-size: 1.2em;  
+}
+
+#tabs{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#tabs a{
+    width: 25vw;
+    height: 17vw;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
