@@ -2,10 +2,10 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   //make the navigation bar smaller when the user scrolls down 50 pixels
-    header = document.getElementById("header");
-    title = document.getElementById("title");
-    nav = document.getElementById("nav");
-    navButtons = document.getElementsByClassName("nav-button")
+    var header = document.getElementById("header");
+    var title = document.getElementById("title");
+    var nav = document.getElementById("nav");
+    var navButtons = document.getElementsByClassName("nav-button")
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     header.style.height = "10vh";
@@ -26,4 +26,10 @@ function scrollFunction() {
     for (button of navButtons){
         button.style.margin = "0 1vw";
     }  }
+}
+
+function pause(){
+  var vid = documnet.getElementById("demo");
+  if (vid.paused){vid.play()}
+  else{vid.pause()}
 }
