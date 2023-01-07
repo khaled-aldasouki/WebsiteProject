@@ -12,7 +12,7 @@ div{
 }
 
 p{
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 /*button styling*/
@@ -29,7 +29,7 @@ a{
 }
 
 header{
-    height: 9vh;
+    height: 6vh;
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -40,14 +40,15 @@ header{
     transition: 0.5s
 }
 #menu{
-    margin:1vh 0 0 1vw;
+    margin:auto 0;
     display: inline;
-    width: 9vw;
-    height: 8vw
+    width: 8vw;
+    height: 3.5vh;
+    transition: 0.5s;
 }
 
 #title{
-    margin: 2vh 2vw;
+    margin: auto 2vw auto 0vw;
     font-size: 2.5rem;
     display: inline;
     transition: 0.5s;
@@ -78,7 +79,7 @@ h3{
 }
 #about-brief p{
     width: 65vw;
-    height: 34vh;
+    height: 23vh;
 }
 #khaled{
     float: right;
@@ -100,7 +101,7 @@ h3{
 }
 #game-brief p{
     width: 50vw;
-    height: 34vh;
+    height: 23vh;
 }
 #demo-image{
     float:right;
@@ -172,6 +173,55 @@ div h2{
 @media screen and (min-width: 768px)  {
     html{font-size: 16px;}
     header{
+        height: 8vh;
+    }
+    #menu{ width: 5vh; height:5vh}
+    #title{
+        margin:auto 2vw auto 0;
+        margin-left: 0;
+        display: inline;
+        transition: 0.5s;
+    }
+    
+    a{font-size: 1.2rem}
+    #khaled{
+        width: 27vw;
+        height: 27vw;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+
+    #about-brief p{
+        width: 65vw;
+        height: 20vh;
+    }
+    #game-brief p{
+        width: 65vw;
+        height: 20vh;
+    }
+    div h2{padding: 10vh 0 5vh 0;}
+    #demo-image{
+        width: 46vw;
+        height: 25vw;
+    }
+    .tab{
+        width: 25vw;
+        height: 17vw;
+        background-size: 15vw 15vw;
+        font-size: 2rem;
+    }
+    .more{
+        font-size: 1.2rem;
+        margin: 6vh 0;
+    }
+    #tabs{flex-wrap: nowrap;}
+}
+
+
+@media screen and (min-width: 1600px)  {
+    html{font-size: 16px;}
+    header{
         justify-content: space-between;
         height: 12vh;
     }
@@ -217,11 +267,3 @@ div h2{
     }
     #tabs{flex-wrap: nowrap;}
 }
-
-/*
-@media screen and (min-width: 1600px)  {
-    #khaled{
-        width: 20vw;
-        height: 45vh;
-    }
-}*/
