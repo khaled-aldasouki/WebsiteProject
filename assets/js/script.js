@@ -8,20 +8,32 @@ function scrollFunction() {
     var navButtons = document.getElementsByClassName("nav-button")
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    header.style.height = "10vh";
-    header.style.backgroundColor = "white";
-    title.style.fontSize = "2rem";
-    title.style.margin = "2vh 2vw";
-    nav.style.marginTop = "3vh";
+    if (window.innerWidth > 768){
+      header.style.height = "10vh";
+      nav.style.marginTop = "3vh";
+      title.style.fontSize = "2rem";
+    } 
+    else {
+      header.style.height = "9vh"
+    }
+
     nav.style.marginBottom = "8vh";
     for (button of navButtons){
         button.style.margin = "0 0.5vw";
     }
-      } else {
-    header.style.height = "12vh";
-    title.style.fontSize = "2.5rem";
-    title.style.margin = "3vh 3vw";
-    nav.style.marginTop = "4vh";
+      } 
+    else {
+        if (window.innerWidth > 768){
+          header.style.height = "12vh";
+          title.style.margin = "2vh 3vw";
+          nav.style.marginTop = "4vh";
+          title.style.fontSize = "2.5rem";
+        } 
+        else {
+          header.style.height = "9vh"
+          title.style.margin = "2vh 2vw";
+        }
+    
     nav.style.marginBottom = "10vh";
     for (button of navButtons){
         button.style.margin = "0 1vw";

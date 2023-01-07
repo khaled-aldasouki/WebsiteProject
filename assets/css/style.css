@@ -29,18 +29,25 @@ a{
 }
 
 header{
-    height: 12vh;
+    height: 9vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: center;
     position: sticky;
     top: 0;
     z-index: 10;
-    transition: 0.5s;
+    background-color: white;
+    transition: 0.5s
+}
+#menu{
+    margin:1vh 0 0 1vw;
+    display: inline;
+    width: 9vw;
+    height: 8vw
 }
 
 #title{
-    margin:3vh 3vw;
+    margin: 2vh 2vw;
     font-size: 2.5rem;
     display: inline;
     transition: 0.5s;
@@ -50,6 +57,7 @@ nav{
     margin-top: 4vh;
     margin-bottom: 10vh;
     transition: 0.5s;
+    display:none;
 }
 .nav-button{
     margin: 0 1vw;
@@ -70,7 +78,7 @@ h3{
 }
 #about-brief p{
     width: 65vw;
-    height: 20vh;
+    height: 34vh;
 }
 #khaled{
     float: right;
@@ -92,7 +100,7 @@ h3{
 }
 #game-brief p{
     width: 50vw;
-    height: 25vh;
+    height: 34vh;
 }
 #demo-image{
     float:right;
@@ -109,8 +117,8 @@ h3{
     padding: 1vh 1.5vw;
     transition: 0.3s;
     border: black solid 0px;
-    font-size: 2rem
-
+    font-size: 2rem;
+    margin: 7vh 0 0 0;
 }
 .nav-button:hover,.more:hover{
     transform: scale(1.1);
@@ -163,10 +171,17 @@ div h2{
 
 @media screen and (min-width: 768px)  {
     html{font-size: 16px;}
-    
-    #title{
-        font-size: 2.5rem;
+    header{
+        justify-content: space-between;
+        height: 12vh;
     }
+    #menu{display: none;}
+    #title{
+        margin:2vh 3vw;
+        display: inline;
+        transition: 0.5s;
+    }
+    nav{display: inline;}
     
     a{font-size: 1.2rem}
     #khaled{
@@ -181,7 +196,10 @@ div h2{
         width: 65vw;
         height: 20vh;
     }
-
+    #game-brief p{
+        width: 65vw;
+        height: 20vh;
+    }
     div h2{padding: 10vh 0 5vh 0;}
     #demo-image{
         width: 46vw;
@@ -195,7 +213,7 @@ div h2{
     }
     .more{
         font-size: 1.2rem;
-        margin-top: 5vh;
+        margin: 5vh 0;
     }
     #tabs{flex-wrap: nowrap;}
 }
