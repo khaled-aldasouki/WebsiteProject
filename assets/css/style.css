@@ -55,15 +55,27 @@ header{
 }
 
 nav{
-    margin-top: 4vh;
-    margin-bottom: 10vh;
-    transition: 0.5s;
-    display:none;
+    margin-top: 6vh;
+    position: fixed;
+    display:flex;
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: start;
+    transition: all 0.09s linear;
 }
 .nav-button{
-    margin: 0 1vw;
-    transition: margin 0.5s, background-color 0.3s, border 0.1s;
-    border: black solid 0px
+    color: #000000;
+    background-color: #01bdc6;
+    padding: 1.5vh 2vw;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5em;  
+    width:auto;
+    border-radius: 0;   
+    margin: 0;
+    transition: 0.5s;
 }
 
 h3{
@@ -121,7 +133,7 @@ h3{
     font-size: 2rem;
     margin: 7vh 0 0 0;
 }
-.nav-button:hover,.more:hover{
+.more:hover{
     transform: scale(1.1);
     transform-origin: bottom;
     border: black solid 1.5px;
@@ -176,6 +188,8 @@ div h2{
         height: 8vh;
     }
     #menu{ width: 5vh; height:5vh}
+    nav{    margin-top: 8vh;
+    }
     #title{
         margin:auto 2vw auto 0;
         margin-left: 0;
@@ -220,7 +234,7 @@ div h2{
 
 
 @media screen and (min-width: 1600px)  {
-    html{font-size: 16px;}
+    html{font-size: 40px;}
     header{
         justify-content: space-between;
         height: 12vh;
@@ -231,12 +245,42 @@ div h2{
         display: inline;
         transition: 0.5s;
     }
-    nav{display: inline;}
-    
+    nav{
+        margin-top: 12vh;
+        display: inline;
+        margin-top: 4vh;
+        margin-bottom: 10vh;
+        position: fixed;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-button{
+        color: #000000;
+        background-color: #01bdc6;
+        padding: 1.5vh 2vw;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 0.4vw;
+        border-radius: 15px;   
+        font-size: 1.5em;  
+        margin: 0 1vw;
+        transition: margin 0.5s, background-color 0.3s, border 0.1s;
+        border: black solid 0px
+    }
+    .nav-button:hover{
+        transform: scale(1.1);
+        transform-origin: bottom;
+        border: black solid 1.5px;
+    }
+
     a{font-size: 1.2rem}
+
     #khaled{
-        width: 22vw;
-        height: 22vw;
+        width: 27vw;
+        height: 27vw;
+        border-width: 30px;
     }
     p{
         font-size: 1.2rem;
@@ -245,6 +289,7 @@ div h2{
     #about-brief p{
         width: 65vw;
         height: 20vh;
+
     }
     #game-brief p{
         width: 65vw;
