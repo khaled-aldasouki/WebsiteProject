@@ -1,3 +1,137 @@
-<video id="demo" width="500" height="350" onClick="pause();" autoplay muted loop>
-    <source src="assets/media/demo.mp4" type="video/mp4">
-</video> 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <!---<link rel="stylesheet" type="text/css" media="print" href="assets/css/print.css" />-->
+        <link rel="icon" href="assets/media/icon.jpg" />
+        <meta charset="utf-8" />
+        <script src="assets/js/script.js"></script>
+        <title>Projects</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header id="header"> 
+            <img id="menu" alt="menu icon" src="assets/media/menu.png" onclick="menu();" >
+            <h1 id="title">Khaled Aldasouki</h1>
+            <nav id="nav">
+                <a class="nav-button" href="index.html">Home</a>
+                <a class="nav-button" href="about.html">About</a>
+                <a class="nav-button" href="projects.html">Projects</a>
+                <a class="nav-button" href="experience.html">Experience</a>
+                <a class="nav-button" href="contact.html">Contact</a>
+            </nav>
+        </header>
+        
+
+        <main>
+            <div>
+                <h2>Projects</h2>
+                <div id="tabs">
+                    <a class="tab" href="#game">Protect Mother Nature</a>
+                    <a class="tab" href="#toky">TOKY Burgers</a>
+                    <a class="tab" href="#covid">COVID-19</a>
+                    <a class="tab" href="#ecom">E-commerce Website</a>
+                </div>
+            </div>
+
+            <div id="game" class="content">
+                <h3>Protect Mother Nature</h3>
+                <img id="demo-image" alt="Screenshot of Protect Mother Nature" src="assets/media/demo-image.jpg">
+                <p>
+                    Protect Mother Nature is the first game I completed a demo for while participating at the HP Gaming Garage Sustainability
+                    Hackathon 2.0 as part of team Whitespace. Using Unity 3D, we were able to develop a prototype of this small indie run and
+                    gun game where the player must defend a crystal in the center of the map from incoming waves of enemies while trying to survive 
+                    and collect dropped crystals. 
+                </p>
+                <p>
+                    The game won second place during the HP Gaming Garage Sustainability Hackathon 2.0 and the team showcased it
+                    as part of the Discovery Zone in PopConME & GameExpo at the Dubai Esports Festival 2022.
+                </p>
+                <h4>Contributors:</h4>
+                    <ul>
+                        <li><a class="contributors">Rami Youhana</a></li>
+                    </ul>
+                <a class="more" href="https://github.com/khaled-aldasouki/ProtectMotherNature">For more details, visit the game on github</a>
+                <br>
+                <a class="more" href="assets/download-files/ProtectMotherNature-1.0.zip" download>Download now!</a>
+            </div>
+
+            <div id="toky" class="content">
+                <h3>TOKY Burgers</h3>
+                <img id="toky-logo" alt="TOKY Burgers Logo" src="assets/media/TOKY-logo.png" >
+                <p>
+                    With the help of my team, we were able to create a mock website for a made-up resturaunt 
+                    named TOKY Burgers as a project for one of our univesity courses. The projects target outcome was 
+                    to show an understanding of basic HTML and CSS, as well as the web development process and design.
+                </p>
+
+                <h4>Course: Web and Mobile I</h4>
+                <h4>Contributors:</h4>
+                    <ul>
+                        <li><a class="contributors" href="https://www.linkedin.com/in/omar-shaikh-al-zoor/">Omar Sheikh Al Zoor</a></li>
+                        <li><a class="contributors" href="https://www.linkedin.com/in/tareq-abbas-529b0223b/">Tareq Abbas</a></li>
+                        <li><a class="contributors" href="https://www.linkedin.com/in/my1751/">Mohammad Yousef</a></li>
+                    </ul>
+
+                    <a class="more" href="https://people.rit.edu/kaa5082/140/project1/index.html">Check out TOKY Burgers</a>
+            </div>
+
+            <div id="covid" class="content">
+                <h3>COVID-19 Informational Website</h3>
+                <img id="covid-logo" alt="Unofficial Health Organization Logo" src="assets/media/uho-logo.jpg" >
+                <p>
+                    A website including basic but important information regarding COVID-19 such as it's symptoms and effect 
+                    on education. The website is under a made-up parody health organization and was made as a group project
+                    for a university course to demonstrate an understanding of HTML and CSS as well as a mobile-first development
+                    process of a responsive website.
+                </p>
+                    <h4>Course: Web and Mobile I</h4>
+                    <h4>Contributors:</h4>
+                    <ul>
+                        <li><a class="contributors" href="https://www.linkedin.com/in/avasyukashyap/">Avasyu Kashyap</a></li>
+                        <li><a class="contributors">Khalid Mohammad</a></li>
+                        <li><a class="contributors">Ali Reza Jafari</a></li>
+                    </ul>
+
+                    <a class="more" href="https://people.rit.edu/kaa5082/140/project2/index.html">Check out Unofficial Health Organization</a>
+            </div>
+
+            <div id="ecom" class="content">
+                <h3>E-commerce Website</h3>
+                <p>
+                    An Angular app that was developed as a course project to apply the OpenUP development process and demonstrate 
+                    the teams understanding of several Software Engineering practices such as sprint planning, stand-up meetings,
+                    and documentation. The app uses the Angular framework for the front end and the Spring framework for the backend to
+                    provide a functioning e-store that allows admins to add and manage products, and customers to shop through the store.
+                </p>
+                    <h4>Course: Introduction to Software Engineering</h4>
+                    <h4>Contributors:</h4>
+                    <ul>
+                        <li><a class="contributors" href="https://www.linkedin.com/in/mohammad-hadi-elabed/">Mohammad Hadi Elabed</a></li>
+                        <li><a class="contributors" href="https://www.linkedin.com/in/hrishikesgk/">Hrishikesh Kumar</a></li>
+                        <li><a class="contributors" href="https://www.linkedin.com/in/maksim-rashchupkin-8021ab251/">Maksim Rashchupkin</a></li>
+                        <li><a class="contributors" href="https://www.linkedin.com/in/ayaalqawasmi/">Aya Alqawasmi</a></li>
+                    </ul>
+
+                <strong><i>The project is currently unavailable for public viewing.</i></strong>
+            </div>
+
+            <div>
+                <h2>Socials</h2>
+                <div id="tabs">
+                    <a class="tab" id="linkedin" href="https://www.linkedin.com/in/khaled-aldasouki/"></a>
+                    <a class="tab" id="github" href="https://github.com/khaled-aldasouki"></a>
+                    <a class="tab" id="insta"></a>
+                    <a class="tab" id="email" href="mailto: khaldasoukibus@gmail.com"></a>
+            </div>
+
+        </main>
+        <footer>
+            
+        </footer>
+
+    </body>
+
+</html>

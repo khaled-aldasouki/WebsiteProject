@@ -32,7 +32,7 @@ function scrollFunction() {
       title.style.fontSize = "2.2rem";
 
       for (button of navButtons){
-        button.style.margin = "0 0.5vw";
+        button.style.margin = "0 0.2vw";
         nav.style.fontSize = "1.1rem";
       }
     }    
@@ -61,17 +61,11 @@ function scrollFunction() {
           title.style.margin = "auto 1vw";
           title.style.fontSize = "2.5rem";
           for (button of navButtons){
-            button.style.margin = "0 0.7vw";
+            button.style.margin = "0 0.5vw";
           } 
         }
 
   }
-}
-
-function pause(){
-  var vid = documnet.getElementById("demo");
-  if (vid.paused){vid.play()}
-  else{vid.pause()}
 }
 
 //burger menu behavior
