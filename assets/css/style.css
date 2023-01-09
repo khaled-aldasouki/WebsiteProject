@@ -241,18 +241,17 @@ div h2{
     }
     #menu{display: none;}
     #title{
-        margin:2vh 3vw;
+        margin:auto 1vw;
         display: inline;
         transition: 0.5s;
     }
     nav{
-        margin-top: 12vh;
         display: inline;
-        margin-top: 4vh;
-        margin-bottom: 10vh;
-        position: fixed;
+        position: sticky;
         visibility: visible;
         opacity: 1;
+        z-index: 2;
+        margin: auto 0;
     }
 
     .nav-button{
@@ -262,10 +261,9 @@ div h2{
         text-align: center;
         text-decoration: none;
         cursor: pointer;
-        margin: 0.4vw;
         border-radius: 15px;   
-        font-size: 1.5em;  
-        margin: 0 1vw;
+        font-size: 1.3rem;  
+        margin: 0 0.7vw;
         transition: margin 0.5s, background-color 0.3s, border 0.1s;
         border: black solid 0px
     }

@@ -15,7 +15,7 @@ function scrollFunction() {
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     //scrolled on tablet
-    if (window.innerWidth > 768){
+    if (window.innerWidth > 768 && window.innerWidth < 1600){
       header.style.height = "7vh";
       nav.style.marginTop = "7vh"
       title.style.fontSize = "2.2rem";
@@ -23,18 +23,27 @@ function scrollFunction() {
       menu.style.width = "4vh"
       title.style.margin = "auto 2vw auto 0";
     } 
-    
 
-    //scrolled on any device
-    /*
-    for (button of navButtons){
+    //scrolled on pc
+    if (window.innerWidth >= 1600){
+      nav.style.margin = "auto 0";
+      header.style.height = "10vh";
+      title.style.margin = "auto 0.5vw";
+      title.style.fontSize = "2.2rem";
+
+      for (button of navButtons){
         button.style.margin = "0 0.5vw";
-    }*/
+        nav.style.fontSize = "1.1rem";
+      }
+    }    
+    
       }
 
-    //didn't scoll on tablet 
+    //didn't scroll
     else {
-        if (window.innerWidth > 768){
+
+        //didn't scoll on tablet 
+        if (window.innerWidth > 768 && window.innerWidth < 1600){
           header.style.height = "8vh";
           nav.style.marginTop = "8vh"
           title.style.margin = "auto 2vw auto 0vw";
@@ -42,16 +51,21 @@ function scrollFunction() {
           title.style.fontSize = "2.5rem";
           menu.style.height = "5vh"
           menu.style.width = "5vh"
-          
         } 
 
-        
-    //didn't scroll on any device
-    
-    /*
-    for (button of navButtons){
-        button.style.margin = "0 1vw";
-    } */ }
+        //didn't scroll on pc
+        if (window.innerWidth >= 1600){
+          header.style.height = "12vh";
+          nav.style.margin = "auto 0"
+          nav.style.fontSize = "1.3rem";
+          title.style.margin = "auto 1vw";
+          title.style.fontSize = "2.5rem";
+          for (button of navButtons){
+            button.style.margin = "0 0.7vw";
+          } 
+        }
+
+  }
 }
 
 function pause(){
