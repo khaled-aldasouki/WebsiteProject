@@ -216,8 +216,8 @@ div h2{
     width: 25vw;   
 }
 
-.contributors{
-    color: #000000;
+.text-link{
+    color: #0b797e;
     background-color: transparent;
     padding:0;
     text-align: left;
@@ -228,8 +228,8 @@ div h2{
     font-size: 1em;
     transition: 0.2s;
 }
-.contributors:hover{
-    color:#0b797e
+.text-link:hover{
+    color:#0dbbc5
 
 }
 
@@ -263,6 +263,11 @@ div h2{
 }
 #courses{
     background-color: #dde1e0;
+}
+
+/* Contact Page */
+#reach-out{
+    background-color: #cecacada;
 }
 @media screen and (min-width: 768px)  {
     html{
