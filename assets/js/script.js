@@ -18,7 +18,7 @@ function scrollFunction() {
     if (window.innerWidth > 768 && window.innerWidth < 1600){
       header.style.height = "7vh";
       nav.style.marginTop = "7vh"
-      title.style.fontSize = "2.2rem";
+      title.style.fontSize = "2rem";
       menu.style.height = "4vh"
       menu.style.width = "4vh"
       title.style.margin = "auto 2vw auto 0";
@@ -48,7 +48,7 @@ function scrollFunction() {
           nav.style.marginTop = "8vh"
           title.style.margin = "auto 2vw auto 0vw";
           title.style.marginLeft = "0";
-          title.style.fontSize = "2.5rem";
+          title.style.fontSize = "2.3rem";
           menu.style.height = "5vh"
           menu.style.width = "5vh"
         } 
