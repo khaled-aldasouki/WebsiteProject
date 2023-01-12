@@ -120,7 +120,7 @@ h5{
     clear: left;
     width: 38vw;
     height: 38vw;
-    border: #606060 solid 15px;
+    border: #606060 solid 8px;
     border-top: none;
     border-left: none;
     margin-left: 4vw;
@@ -138,7 +138,7 @@ h5{
     float:right;
     width: 56vw;
     height: 37vw;
-    padding-top: 5vh;
+    padding-top: 3vh;
     margin-left: 5vw;
 }
 
@@ -343,7 +343,7 @@ div h2{
 
 @media screen and (min-width: 1600px)  {
     html{
-        font-size: 40px;
+        font-size: 20px;
     }
     header{
         justify-content: space-between;
@@ -400,8 +400,8 @@ div h2{
         width: 65vw;
     }
     #khaled{
-        width: 27vw;
-        height: 27vw;
+        width: 20vw;
+        height: 20vw;
         border-width: 30px;
     }
 
@@ -409,8 +409,8 @@ div h2{
         width: 65vw;
     }
     #demo-image{
-        width: 46vw;
-        height: 25vw;
+        width: 40vw;
+        height: 22vw;
     }
 
     .more{
