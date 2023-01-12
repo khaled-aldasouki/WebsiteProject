@@ -58,7 +58,7 @@ header{
 
 #title{
     margin: auto 2vw auto 0vw;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     display: inline;
     transition: 0.5s;
 }
@@ -289,6 +289,7 @@ div h2{
     }
     #title{
         margin:auto 2vw auto 0;
+        font-size: 1.8rem;
         margin-left: 0;
         display: inline;
         transition: 0.5s;
@@ -306,6 +307,7 @@ div h2{
     #khaled{
         width: 25vw;
         height: 25vw;
+        border-width: 12px;
     }
 
     #game-brief p{
@@ -354,6 +356,7 @@ div h2{
     }
     #title{
         margin:auto 1vw;
+        font-size: 2.5rem;
         display: inline;
         transition: 0.5s;
     }
@@ -402,7 +405,7 @@ div h2{
     #khaled{
         width: 20vw;
         height: 20vw;
-        border-width: 30px;
+        border-width: 20px;
     }
 
     #game-brief p{
@@ -427,12 +430,10 @@ div h2{
     .tab{
         width: 25vw;
         height: 17vw;
-        background-size: 15vw 15vw;
+        background-size: 13vw 13vw;
         font-size: 2rem;
     }
 
-
-    /*Projects Page*/
 
 
 

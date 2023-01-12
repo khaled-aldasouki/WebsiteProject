@@ -1,11 +1,16 @@
 window.onscroll = function() {scrollFunction()};
 window.onload = function(){menu()};
-window.onload(function() {
+window.onresize = function(){
+
+  //automatically shows the menu if the user resizes the window into desktop size
   if (window.innerWidth >= 1600){
-    $("<p>hi</p>").appendTo( $("#header"));
+    document.getElementById("menu").style.visibility = "visible";
   }
-});
+
+  }
+
 function scrollFunction() {
+
   //make the navigation bar smaller when the user scrolls down 50 pixels
     var header = document.getElementById("header");
     var title = document.getElementById("title");
@@ -13,12 +18,20 @@ function scrollFunction() {
     var navButtons = document.getElementsByClassName("nav-button")
     var menu = document.getElementById("menu");
 
+  //make sure correct header is always displayed correctly on phone
+  if (window.innerWidth < 768){
+    title.style.fontSize = "2.4rem";
+    header.style.height = "6vh";
+    menu.style.width = "8vw";
+    menu.style.height = "3.5vh";
+  }
+
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     //scrolled on tablet
     if (window.innerWidth > 768 && window.innerWidth < 1600){
       header.style.height = "7vh";
       nav.style.marginTop = "7vh"
-      title.style.fontSize = "2rem";
+      title.style.fontSize = "1.5rem";
       menu.style.height = "4vh"
       menu.style.width = "4vh"
       title.style.margin = "auto 2vw auto 0";
@@ -37,10 +50,10 @@ function scrollFunction() {
       }
     }    
     
-      }
+  }
 
     //didn't scroll
-    else {
+  else {
 
         //didn't scoll on tablet 
         if (window.innerWidth > 768 && window.innerWidth < 1600){
@@ -48,7 +61,7 @@ function scrollFunction() {
           nav.style.marginTop = "8vh"
           title.style.margin = "auto 2vw auto 0vw";
           title.style.marginLeft = "0";
-          title.style.fontSize = "2.3rem";
+          title.style.fontSize = "1.8rem";
           menu.style.height = "5vh"
           menu.style.width = "5vh"
         } 
@@ -60,6 +73,7 @@ function scrollFunction() {
           nav.style.fontSize = "1.3rem";
           title.style.margin = "auto 1vw";
           title.style.fontSize = "2.5rem";
+
           for (button of navButtons){
             button.style.margin = "0 0.5vw";
           } 
