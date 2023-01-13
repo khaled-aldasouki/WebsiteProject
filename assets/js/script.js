@@ -26,7 +26,7 @@ function scrollFunction() {
     menu.style.height = "3.5vh";
   }
 
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
     //scrolled on tablet
     if (window.innerWidth > 768 && window.innerWidth < 1600){
       header.style.height = "7vh";
